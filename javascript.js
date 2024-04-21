@@ -1,14 +1,25 @@
 function updateTime() {
-  let losAngelesElement = document.querySelector("#los-angeles");
+  let honoluluElement = document.querySelector("#honolulu");
 
-  if (losAngelesElement) {
-    let losAngelesDateElement = losAngelesElement.querySelector(".date");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".time");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+  if (honoluluElement) {
+    let honoluluDateElement = honoluluElement.querySelector(".date");
+    let honoluluTimeElement = honoluluElement.querySelector(".time");
+    let honoluluTime = moment().tz("Pacific/Honolulu");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format("HH:mm:ss");
+    honoluluDateElement.innerHTML = honoluluTime.format("MMMM Do YYYY");
+    honoluluTimeElement.innerHTML = honoluluTime.format("HH:mm:ss");
   }
+
+  let limaElement = document.querySelector("#lima");
+  if (limaElement) {
+    let limaDateElement = limaElement.querySelector(".date");
+    let limaTimeElement = limaElement.querySelector(".time");
+    let limaTime = moment().tz("America/Lima");
+
+    limaDateElement.innerHTML = limaTime.format("MMMM Do YYYY");
+    limaTimeElement.innerHTML = limaTime.format("HH:mm:ss");
+  }
+
   let londonElement = document.querySelector("#london");
   if (londonElement) {
     let londonDateElement = londonElement.querySelector(".date");
@@ -17,6 +28,16 @@ function updateTime() {
 
     londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
     londonTimeElement.innerHTML = londonTime.format("HH:mm:ss");
+  }
+
+  let singaporeElement = document.querySelector("#singapore");
+  if (singaporeElement) {
+    let singaporeDateElement = singaporeElement.querySelector(".date");
+    let singaporeTimeElement = singaporeElement.querySelector(".time");
+    let singaporeTime = moment().tz("Asia/Singapore");
+
+    singaporeDateElement.innerHTML = singaporeTime.format("MMMM Do YYYY");
+    singaporeTimeElement.innerHTML = singaporeTime.format("HH:mm:ss");
   }
 }
 
