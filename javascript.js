@@ -41,8 +41,15 @@ function updateCity(event) {
   }, 1000);
 }
 
+function refreshPage(event) {
+  window.location.reload();
+}
+
 updateTime();
 setInterval(updateTime, 1000);
 
 let citySelectElement = document.querySelector("#city");
 citySelectElement.addEventListener("change", updateCity);
+
+let refreshButton = document.querySelector(".refresh-button");
+refreshButton.addEventListener("click", refreshPage);
