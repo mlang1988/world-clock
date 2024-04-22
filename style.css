@@ -1,8 +1,8 @@
 body {
   background: linear-gradient(
-    109.6deg,
-    rgb(255, 251, 213) 11.2%,
-    rgb(178, 10, 44) 91.2%
+    89deg,
+    rgb(253, 220, 155) 26.2%,
+    rgb(255, 215, 165) 48.5%
   );
   background-repeat: no-repeat;
   background-size: auto 200%;
@@ -14,7 +14,7 @@ h1 {
   font-size: 40px;
   border-style: inset;
   border-radius: 7px;
-  color: #b20a2c;
+  color: #7b0c3e;
 }
 
 h2 {
@@ -40,7 +40,7 @@ select {
 .container {
   max-width: 600px;
   margin: 45px auto;
-  background: #f6eedf69;
+  background: #f6eedfa6;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 7px;
   padding: 25px;
@@ -83,8 +83,8 @@ button {
 
 button:hover {
   cursor: pointer;
-  color: #b9213c;
-  background-color: #fff;
+  color: #fff;
+  background-color: #e9a106;
 }
 
 footer {
