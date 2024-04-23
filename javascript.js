@@ -66,11 +66,31 @@ function refreshPage(event) {
   window.location.reload();
 }
 
+function updateBackground(event) {
+  let bodyElement = document.querySelector("body");
+  if (event.target.value === "Europe/Berlin") {
+    bodyElement.classList.add("berlin");
+  }
+  if (event.target.value === "America/New_York") {
+    bodyElement.classList.add("new-york");
+  }
+  if (event.target.value === "Australia/Melbourne") {
+    bodyElement.classList.add("melbourne");
+  }
+  if (event.target.value === "Asia/Kolkata") {
+    bodyElement.classList.add("kolkata");
+  }
+  if (event.target.value === "Africa/Cairo") {
+    bodyElement.classList.add("cairo");
+  }
+}
+
 updateTime();
 setInterval(updateTime, 1000);
 
 let citySelectElement = document.querySelector("#city");
 citySelectElement.addEventListener("change", updateCity);
+citySelectElement.addEventListener("change", updateBackground);
 
 let refreshButton = document.querySelector(".refresh-button");
 refreshButton.addEventListener("click", refreshPage);
